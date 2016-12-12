@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery Practice with Bootstrap</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+<body>
+
+<div class="container">
+	<div class="jumbotron text-center">
+		<h1>Michael Irby Developer</h1>
+		<button id="btn1">Bio</button>
+		<button id="btn2">Projects</button>
+		<button id="btn3">Skills</button>
+		<button id="btn4">About</button>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-3">
+			<div id="panel1" class="panel panel-primary">
+				<div class="panel-heading">
+					#panel1
+				</div>
+				<div class="panel-body">content
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div id="panel2" class="panel panel-primary">
+				<div class="panel-heading">
+					#panel2
+				</div>
+				<div class="panel-body">content
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div id="panel3" class="panel panel-primary">
+				<div class="panel-heading">
+					#panel3
+				</div>
+				<div class="panel-body">content
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-3">
+			<div id="panel4" class="panel panel-primary">
+				<div class="panel-heading">
+					#panel4
+				</div>
+				<div class="panel-body">content
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-6">
+			<div id="large-panel1" class="panel panel-primary">
+				<div class="panel-heading">
+					#large-panel1
+				</div>
+				<div class="panel-body hts">Main Content
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-6">
+			<div id="large-panel2" class="panel panel-primary">
+				<div class="panel-heading">
+					#large-panel2
+				</div>
+				<div class="panel-body hts">Main Content
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+</div>
+
+
+<script src="jquery-3.1.1.js"></script>
+
+<script>
+	$(function() {
+
+		$('#btn1').on('click', function() {
+			$('#panel1').fadeToggle(200);
+		});
+		$('#btn2').on('click', function() {
+			$('#panel2').fadeToggle(200);
+		});
+		$('#btn3').on('click', function() {
+			$('#panel3').fadeToggle(200);
+		});
+		$('#btn4').on('click', function() {
+			$('#panel4').fadeToggle(200);
+		});
+
+
+	});
+
+
+
+
+</script>
+
+</body>
+</html>
